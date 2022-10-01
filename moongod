@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
 NotifyLib.prompt('QH rage - Q To Lock', 'Loading..', 5)
-NotifyLib.prompt('Sets Loaded', 'Son Them', 5)
+NotifyLib.prompt('loaded', 5)
 NotifyLib.prompt('QH..', 'its abt time ;)', 5)
  
  
@@ -9,7 +9,7 @@ NotifyLib.prompt('QH..', 'its abt time ;)', 5)
         rewrittenmain = {
         Enabled = true,
         Key = "q",
-        DOT = true,
+        DOT = false,
         AIRSHOT = true,
         NOTIF = true,
         AUTOPRED = false,
@@ -111,8 +111,8 @@ local PredictionValue = 0.1357363
                 if Settings.rewrittenmain.NOTIF == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = "yarn";
-                    Text = "Unlocked",
+                    Title = "qh#0001";
+                    Text = "no one",
                     Duration = 3
                 })
             end
@@ -122,7 +122,7 @@ local PredictionValue = 0.1357363
                 if Settings.rewrittenmain.NOTIF == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-                        Title = "yarn";
+                        Title = "locked onto";
                         Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName),
                         Duration = 3
                     })
